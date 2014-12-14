@@ -11,8 +11,8 @@ npm i level-tb
 ## Usage
 
 ~~~javascript
-var ttl = require('level-ttl');
 var level = require('level');
+var ttl = require('level-ttl');
 var db = ttl(level(__dirname + '/test'));
 
 var bucket = new TokenBucket({
