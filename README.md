@@ -31,7 +31,7 @@ bucket.take(1, function (err, result, status) {
 
 ## How it works, implementation details
 
-This implementation doesn't use system timers per bucket, every time you take tokens from the bucket, we drip first the difference of tokens since last time.
+This implementation doesn't use timers per bucket, every time you take tokens from the bucket, we drip first the difference of tokens since last time.
 
 New buckets are full of tokens.
 
